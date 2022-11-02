@@ -104,7 +104,22 @@ class BookList extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                   ),
                             ),
-                            Container()
+                            Container(
+                              height: constraints.maxHeight * 0.13,
+                              width: constraints.maxWidth * 0.35,
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                color: AppColors.black,
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: Text(
+                                'pageCount',
+                                style: TextStyle(
+                                  fontSize: constraints.maxWidth * 0.08,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            )
                           ],
                         ),
                       ),
